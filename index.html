@@ -1,1 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/general.css" />
+    <link rel="stylesheet" href="src/css/animation.css" />
+    <link rel="stylesheet" href="src/css/navigation.css" />
+    <link rel="stylesheet" href="src/css/home.css" />
+    <title>Handmade</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="container animate-element" data-timeout="0" data-onload="true">
+      <div class="logo"><img src="assets/logo/logo.svg" alt="" /></div>
+      <div class="button" id="hamburger">
+        <p>menu</p>
+        <div class="hamburger-bar">
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </nav>
 
+    <section id="navigation-menu" class="navigation-menu">
+      <div class="nav-list">
+        <ul>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>About us</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <a href="">
+          <svg class="icon">
+            <use xlink:href="assets/image/home-sprite.svg#linkedin"></use>
+          </svg>
+        </a>
+        <a href="instagram.com">
+          <svg class="icon">
+            <use xlink:href="assets/image/home-sprite.svg#instagram"></use>
+          </svg>
+        </a>
+        <a href="">
+          <svg class="icon">
+            <use xlink:href="assets/image/home-sprite.svg#behance"></use>
+          </svg>
+        </a>
+        <a href="">
+          <svg class="icon">
+            <use xlink:href="assets/image/home-sprite.svg#dribble"></use>
+          </svg>
+        </a>
+        <a href="">
+          <svg class="icon">
+            <use xlink:href="assets/image/home-sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero container-narrow">
+      <h1
+        class="separate-text animate-element fade-up-line"
+        data-onload="true"
+        data-text="We help companies all around the world to grow"
+      ></h1>
+      <div class="buttons animate-element fade-up" data-onload="true">
+        <div class="cta-buttons">
+          <div class="button-light">
+            <svg class="icon">
+              <use xlink:href="assets/image/home-sprite.svg#arrow"></use>
+            </svg>
+            <p>Our portfolio</p>
+          </div>
+          <div class="button-dark">
+            <svg class="icon">
+              <use xlink:href="assets/image/home-sprite.svg#arrow"></use>
+            </svg>
+
+            <p>Contact us</p>
+          </div>
+        </div>
+        <div class="scroll-button">
+          <svg class="icon">
+            <use xlink:href="assets/image/home-sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Show Reel -->
+    <section
+      id="show-reel"
+      class="show-reel container animate-element"
+      data-onload="true"
+    >
+      <video id="showreel-video" autoplay muted loop>
+        <!-- <source src="assets/video/reel.mp4" type="video/mp4" /> -->
+        Your browser does not support the video tag.
+      </video>
+
+      <div id="play" class="play-button">
+        <svg id="icon" class="icon">
+          <use xlink:href="assets/image/home-sprite.svg#play"></use>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us container-narrow section-space">
+      <h2
+        class="separate-text animate-element fade-up-line"
+        data-text="Design, build and maintain products"
+      ></h2>
+      <div class="description">
+        <p
+          class="separate-text animate-element fade-up-line"
+          data-text="Based out of Serbia Handmade Company has become one of the best
+          quality Digital Agency in Eastern Europe. Our focus has always been to
+          create enjoyable, intuitive, engaging and remarkable experience for
+          people — that's what sets us apart from everyone else."
+          data-parent="true"
+        ></p>
+        <p
+          class="separate-text animate-element fade-up-line"
+          data-text="We are a team of creatives who design identities, custom-built
+          websites and launch digital products that empower teams."
+          data-parent="true"
+          data-timeout="280"
+        ></p>
+      </div>
+      <div class="clutch animate-element fade-up">
+        <img class="clutch-logo" src="assets/icon/clutch.svg" alt="" />
+        <div class="description">
+          <div class="stars"></div>
+          <img src="assets/icon/stars.svg" alt="" />
+          <p class="small-text">
+            Rated 5.0/5.0 for design and <br />
+            development services
+          </p>
+        </div>
+      </div>
+      <div class="button-dark animate-element fade-up">
+        <svg class="icon">
+          <use xlink:href="assets/image/home-sprite.svg#arrow"></use>
+        </svg>
+        <p>About us</p>
+      </div>
+    </section>
+
+    <!-- CTA White Section Contact -->
+    <section class="white-section cta-area">
+      <p class="subtitle animate-element fade-up">Scale up your business!</p>
+      <h2
+        class="separate-text animate-element fade-up-line"
+        data-text="Let’s make something great together!"
+      ></h2>
+      <div class="button-dark animate-element fade-up">
+        <svg class="icon">
+          <use xlink:href="assets/image/home-sprite.svg#arrow"></use>
+        </svg>
+        <p>Contact us</p>
+      </div>
+    </section>
+
+    <!-- Awards List Section -->
+    <section id="award" class="awards container-narrow section-space">
+      <div class="counter animate-element fade-up">10+</div>
+      <h2>
+        <p class="animate-element fade-up" data-parent="true">Awards for</p>
+        <p class="animate-element fade-up" data-timeout="80" data-parent="true">
+          digital innovation
+        </p>
+      </h2>
+
+      <div class="trophy">
+        <video autoplay muted loop>
+          <source src="assets/video/trophy.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="award-list">
+        <ul>
+          <li class="animate-element fade-up" data-parent="true">
+            <p class="name">Awwwards</p>
+            <div class="category">
+              <p>Nominee</p>
+              <div class="count">x2</div>
+            </div>
+          </li>
+          <li class="animate-element fade-up" data-timeout data-parent="true">
+            <p class="name">Behance</p>
+            <div class="category">
+              <p>UI award</p>
+              <div class="count">x1</div>
+            </div>
+          </li>
+          <li class="animate-element fade-up" data-parent="true">
+            <p class="name">CSS Design Awards</p>
+            <div class="category">
+              <p>Special kudos</p>
+              <div class="count">x3</div>
+            </div>
+          </li>
+          <li class="animate-element fade-up" data-parent="true">
+            <p class="name">CSS Design Awards</p>
+            <div class="category">
+              <p>Innovation</p>
+              <div class="count">x2</div>
+            </div>
+          </li>
+          <li class="animate-element fade-up" data-parent="true">
+            <p class="name">CSS Design Awards</p>
+            <div class="category">
+              <p>UI award</p>
+              <div class="count">x2</div>
+            </div>
+          </li>
+          <li class="animate-element fade-up" data-parent="true">
+            <p class="name">CSS Design Awards</p>
+            <div class="category">
+              <p>UX award</p>
+              <div class="count">x2</div>
+            </div>
+          </li>
+          <li class="animate-element fade-up" data-parent="true">
+            <p class="name">Css Winner</p>
+            <div class="category">
+              <p>Star award</p>
+              <div class="count">x2</div>
+            </div>
+          </li>
+        </ul>
+
+        <p class="more animate-element fade-up">And many more...</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <div id="project-media" class="project-media"></div>
+
+    <div id="project-details" class="project-details">
+      <div class="info">
+        <p>Recent case</p>
+        <div id="case-name" class="case-name"></div>
+      </div>
+      <div class="scroll-button">
+        <svg class="icon">
+          <use xlink:href="assets/image/home-sprite.svg#arrow"></use>
+        </svg>
+      </div>
+    </div>
+
+    <section id="projects" class="projects">
+      <div
+        class="wrapper"
+        data-image="credd"
+        data-casename="Dating mobile app1"
+      >
+        <div class="title active">Credd</div>
+      </div>
+
+      <div
+        class="wrapper"
+        data-image="marmelo"
+        data-casename="Dating mobile app2"
+      >
+        <div class="title">Marmelo</div>
+      </div>
+
+      <div class="wrapper" data-image="jet" data-casename="Dating mobile app3">
+        <div class="title">Jet Project</div>
+      </div>
+
+      <div
+        class="wrapper"
+        data-image="credd"
+        data-casename="Dating mobile app1"
+      >
+        <div class="title">Credd</div>
+      </div>
+
+      <div
+        class="wrapper"
+        data-image="marmelo"
+        data-casename="Dating mobile app2"
+      >
+        <div class="title">Marmelo</div>
+      </div>
+
+      <div class="wrapper" data-image="jet" data-casename="Dating mobile app3">
+        <div class="title">Jet Project</div>
+      </div>
+
+      <div
+        class="wrapper"
+        data-image="credd"
+        data-casename="Dating mobile app1"
+      >
+        <div class="title">Credd</div>
+      </div>
+
+      <div
+        class="wrapper"
+        data-image="marmelo"
+        data-casename="Dating mobile app2"
+      >
+        <div class="title">Marmelo</div>
+      </div>
+
+      <div class="wrapper" data-image="jet" data-casename="Dating mobile app3">
+        <div class="title">Jet Project</div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-space container-narrow">
+      <div class="item">
+        <div class="label">
+          <p class="animate-element fade-up">01 Service</p>
+        </div>
+        <h2>Web and mobile design and development</h2>
+      </div>
+      <div class="item">
+        <div class="label">
+          <p class="animate-element fade-up">02 Service</p>
+        </div>
+        <h2>Illustration and animation</h2>
+      </div>
+      <div class="item">
+        <div class="label">
+          <p class="animate-element fade-up">03 Service</p>
+        </div>
+        <h2>Identity design and branding</h2>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="white-section">
+      <div class="container-narrow">
+        <div class="top">
+          <h2>
+            Have an idea? <br />
+            Let’s build it!
+          </h2>
+          <div class="button-wrapper">
+            <div class="button-dark">
+              <img src="assets/icon/arrow-light.svg" alt="" />
+              <p>Get a quote</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="line">
+            <div class="contact-info">
+              <a href="mailto:office@handmade.company"
+                >office@handmade.company</a
+              >
+              <a href="tel:+381 60 144 3221">+381 60 144 3221</a>
+            </div>
+            <p>Back to top</p>
+          </div>
+          <div class="line">
+            <div class="copyrights">© All Rights Reserved</div>
+            <div class="social-icons">
+              <a href=""><img src="assets/icon/linkedin.svg" alt="" /></a>
+              <a href=""><img src="assets/icon/instagram.svg" alt="" /></a>
+              <a href=""><img src="assets/icon/behance.svg" alt="" /></a>
+              <a href=""><img src="assets/icon/dribble.svg" alt="" /></a>
+              <a href=""><img src="assets/icon/telegram.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script>
+      history.scrollRestoration = "manual";
+    </script>
+
+    <script type="module" src="src/javascript/navigation.js"></script>
+    <script type="module" src="src/javascript/textAnimation.js"></script>
+    <script type="module" src="src/javascript/showreel.js"></script>
+    <script type="module" src="src/javascript/scrollEvent.js"></script>
+    <script type="module" src="src/javascript/showProjects.js"></script>
+  </body>
+</html>
