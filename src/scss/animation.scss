@@ -1,0 +1,19 @@
+.fade-up {
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+}
+
+.fade-up-line {
+  div {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+}
+
+.fade-up.show-element,
+.fade-up-line.show-element div {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 670ms opacity cubic-bezier(0.165, 0.84, 0.44, 1),
+    670ms transform cubic-bezier(0.165, 0.84, 0.44, 1);
+}

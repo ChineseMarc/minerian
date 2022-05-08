@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.406vw;
+  line-height: 2.052vw;
+}
+
+body ::selection {
+  color: #000;
+  background: #fff;
+}
+
+.container {
+  margin-left: 4.688vw;
+  margin-right: 4.688vw;
+}
+
+.container-narrow {
+  width: 76.563vw;
+  margin: auto;
+}
+
+.section-space {
+  margin-top: 15.625vw;
+  margin-bottom: 15.625vw;
+}
+
+.white-section {
+  background-color: #fff;
+  color: #000;
+}
+
+.button-light,
+.button-dark {
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+  gap: 0.781vw;
+  padding: 1.563vw 2.344vw;
+  cursor: pointer;
+  width: max-content;
+  border-radius: 5.469vw;
+  transition: 300ms background-color cubic-bezier(0.43, 0.195, 0.02, 1);
+}
+
+.button-light svg,
+.button-dark svg {
+  width: 1.172vw;
+  transition: 300ms fill cubic-bezier(0.43, 0.195, 0.02, 1);
+}
+
+.button-light {
+  color: #000;
+  background-color: #fff;
+}
+
+.button-light .icon {
+  fill: #000;
+}
+
+.button-light:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.button-light:hover .icon {
+  fill: #fff;
+}
+
+.button-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.button-dark .icon {
+  fill: #fff;
+}
+
+.button-dark:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.button-dark:hover .icon {
+  fill: #000;
+}
+
+.scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  transition: 300ms background-color cubic-bezier(0.43, 0.195, 0.02, 1);
+  cursor: pointer;
+}
+
+.scroll-button .icon {
+  width: 1.172vw;
+  fill: #fff;
+  transform: rotate(90deg);
+  transition: 300ms fill cubic-bezier(0.43, 0.195, 0.02, 1);
+}
+
+.scroll-button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.scroll-button:hover .icon {
+  fill: #000;
+}
+
+svg {
+  aspect-ratio: 1 /1;
+}
+
+video {
+  width: 100%;
+}
+
+h1 {
+  font-size: 5.938vw;
+  font-weight: 300;
+  line-height: 6.25vw;
+}
+
+h2 {
+  font-size: 4.688vw;
+  font-weight: 300;
+  line-height: 5.078vw;
+}
+
+.small-text {
+  font-size: 0.781vw;
+  line-height: 0.98vw;
+}
+/*# sourceMappingURL=general.css.map */

@@ -1,0 +1,26 @@
+@mixin button {
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+  gap: 0.781vw;
+  padding: 1.563vw 2.344vw;
+  cursor: pointer;
+  width: max-content;
+  border-radius: 5.469vw;
+  transition: 300ms background-color cubic-bezier(0.43, 0.195, 0.02, 1);
+
+  svg {
+    width: 1.172vw;
+    transition: 300ms fill cubic-bezier(0.43, 0.195, 0.02, 1);
+  }
+}
+
+@mixin regular-text {
+  font-size: 1.406vw;
+  line-height: 2.052vw;
+}
+
+@mixin small-text {
+  font-size: 0.781vw;
+  line-height: 0.98vw;
+}

@@ -1,0 +1,153 @@
+// Import
+@import "colors.scss";
+@import "mixin.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+// Syles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $BLACK_COLOR;
+  color: $WHITE_COLOR;
+  font-family: "Montserrat", sans-serif;
+
+  ::-moz-selection {
+    color: $BLACK_COLOR;
+    background: $WHITE_COLOR;
+  }
+
+  ::selection {
+    color: $BLACK_COLOR;
+    background: $WHITE_COLOR;
+  }
+
+  @include regular-text;
+}
+
+// Container
+.container {
+  margin-left: 4.688vw;
+  margin-right: 4.688vw;
+}
+
+.container-narrow {
+  width: 76.563vw;
+  margin: auto;
+}
+
+// Sections
+.section-space {
+  margin-top: 15.625vw;
+  margin-bottom: 15.625vw;
+}
+
+.white-section {
+  background-color: $WHITE_COLOR;
+  color: $BLACK_COLOR;
+}
+
+// Buttons
+.button-light,
+.button-dark {
+  @include button;
+}
+
+.button-light {
+  color: $BLACK_COLOR;
+  background-color: $WHITE_COLOR;
+
+  .icon {
+    fill: $BLACK_COLOR;
+  }
+
+  &:hover {
+    color: $WHITE_COLOR;
+    background-color: $WHITE_LIGHT_COLOR;
+
+    .icon {
+      fill: $WHITE_COLOR;
+    }
+  }
+}
+
+.button-dark {
+  color: $WHITE_COLOR;
+  background-color: $WHITE_LIGHT_COLOR;
+
+  .icon {
+    fill: $WHITE_COLOR;
+  }
+
+  &:hover {
+    color: $BLACK_COLOR;
+    background-color: $WHITE_COLOR;
+
+    .icon {
+      fill: $BLACK_COLOR;
+    }
+  }
+}
+
+.scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $WHITE_LIGHT_COLOR;
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  transition: 300ms background-color cubic-bezier(0.43, 0.195, 0.02, 1);
+  cursor: pointer;
+
+  .icon {
+    width: 1.172vw;
+    fill: $WHITE_COLOR;
+    transform: rotate(90deg);
+    transition: 300ms fill cubic-bezier(0.43, 0.195, 0.02, 1);
+  }
+
+  &:hover {
+    color: $BLACK_COLOR;
+    background-color: $WHITE_COLOR;
+
+    .icon {
+      fill: $BLACK_COLOR;
+    }
+  }
+}
+
+// Media
+svg {
+  aspect-ratio: 1 /1;
+}
+
+video {
+  width: 100%;
+}
+
+// Headings & paragrafs
+h1 {
+  font-size: 5.938vw;
+  font-weight: 300;
+  line-height: 6.25vw;
+}
+
+h2 {
+  font-size: 4.688vw;
+  font-weight: 300;
+  line-height: 5.078vw;
+}
+
+.small-text {
+  @include small-text;
+}
